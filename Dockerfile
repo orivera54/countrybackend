@@ -1,5 +1,5 @@
-#FROM richarvey/nginx-php-fpm:1.7.2
-FROM trafex/php-nginx
+FROM richarvey/nginx-php-fpm:latest
+#FROM trafex/php-nginx
 
 
 COPY . .
