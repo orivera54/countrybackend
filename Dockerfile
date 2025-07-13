@@ -3,7 +3,7 @@ FROM composer:2 as builder
 
 WORKDIR /app
 COPY composer.json composer.lock ./
-RUN composer install --no-dev --no-interaction --optimize-autoloader
+RUN composer install
 
 COPY . .
 
