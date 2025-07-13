@@ -1,0 +1,23 @@
+type Country {
+  name: String!
+  area: Float!
+  population: Int!
+  density: Float!
+}
+
+type LogUse {
+  id: ID!
+  username: String!
+  request_timestamp: String!
+  num_countries_returned: Int!
+  countries_details: String!
+}
+
+type Query {
+  topDensityCountries(limit: Int!, username: String!): [Country!]!
+    @field(resolver: "App\\GraphQL\\Resolvers\\CountryResolver@topDensityCountries")
+
+  usageLogs: [LogUse!]!
+    @field(resolver: "App\\GraphQL\\Resolvers\\CountryResolver@usageLogs")
+}
+
