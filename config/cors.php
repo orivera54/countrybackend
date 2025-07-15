@@ -35,7 +35,8 @@ return [
 
     'allowed_origins' => [
         'http://localhost:4200',
-        'https://countryapp-qqfda3mrw-orivera54s-projects.vercel.app'
+        'https://countryapp-qqfda3mrw-orivera54s-projects.vercel.app',
+        'https://countryapp-ten.vercel.app/'
     ],
 
     /*
